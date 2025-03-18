@@ -1,13 +1,14 @@
-import { useState } from 'react'
 import './App.css'
+import { Route, Routes } from 'react-router'
+import SignupForm from './components/signupForm'
 
 function App() {
 
   return (
     <>
-      <p>
-        Authentication System Client
-      </p>
+      <Routes>
+        <Route path='/signup' element={<SignupForm/>} />
+      </Routes>
     </>
   )
 }
